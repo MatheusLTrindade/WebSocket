@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c2c2d;
+  color: #e5e5e5;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 40rem;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 2rem 0 1rem;
+}
+
+input, button {
+  background-color: #1c1a1d;
+  border: solid 1px #1c1a1d;
+  border-radius: .5rem;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+button {
+  background-color: #00ff9f;
+  border-color: #00ff9f;
+  color: #1c1a1d;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.85);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header button,
+.topic button {
+  background-color: transparent;
+  border: 2px solid #f64348;
+  color: #f64348;
+  width: fit-content;
+}
+
+header button:hover,
+.topic button:hover {
+  background-color: #f64348;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-title {
+  margin: 1rem 0 .25rem;
+  width: 100%;
+}
+
+.inline-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.inline-form input {
+  flex: 3;
+}
+
+.inline-form button {
+  flex: 1;
+}
+
+#topics {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  scrollbar-track-color: #1c1a1d;
+}
+
+#topics > h3 {
+  margin-top: 2rem;
+}
+
+.topic {
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: .5rem;
+  width: 100%;
+}
+
+.topic div {
+  display: flex;
+  gap: .5rem;
+}
+
+.topic button:first-child {
+  background-color: #00ff9f;
+  border: 1px solid #00ff9f;
+  color: #1c1a1d;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.messages {
+  flex: 1 1 auto;
+  padding: 1rem 0;
+}
+
+.message {
+  background-color: #444446;
+  border-radius: .25rem;
+  padding: .25rem .375rem;
+  width: fit-content;
+}
+
+.message + .message {
+  margin-top: .5rem;
+}
+
+.system-message {
+  margin: .5rem 0;
+}
+
+.send-message-form {
+  flex: 0 1 auto;
+}
